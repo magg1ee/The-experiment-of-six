@@ -1,0 +1,63 @@
+#include<iostream>
+#include<stdio.h>
+#include<math.h>
+using namespace std;
+
+class Tri
+{
+privite:
+	double LS;//长边
+	double SS;//短边
+	double HT;//斜边
+public:
+	void BuildTriangle(double ,double, double )//能否构成三角形
+	void PerimeterTriangle(double ,double ,double )
+	void TriangleArea();//输出三角形面积
+	void TriangleType();//输出三角形类型
+}
+void Tri::PerimeterTriangle(double a,double b,double c)
+{
+	LS = a;
+	SS = b;
+	HT = c;
+	cout << a + b + c;
+}
+void Tri::BuildTriangle(double a, double b,double c)
+{
+	LS = a;
+	SS = b;
+	HT = c;
+	if ((a + b) < c)
+		cout << "不";
+	cout << "是三角形";
+}
+void Tri::TriangleType()
+{
+	double a, b, c;
+	cin >> LS >> SS >> HT;
+	a = LS;
+	b = SS;
+	c = HT;
+	double p;
+	double S;
+	p = (a + b + c) / 2;
+	S = sqrt(p*(p-a)*(p-b)*(p-c));
+	cout << S / 4;
+}
+void Tri::TriangleType()
+{
+	if (a * a + b * b = c * c)
+		cout << "是直角三角形";
+}
+void display() 
+{
+	cout << "this指针为" << this << "\n";
+}
+void Analyze()
+{
+
+};
+int main()
+{
+
+}
